@@ -44,3 +44,35 @@ html, body {
 .navigation ul {
     list-style: none;
 }
+
+.accountInfo {
+    display: flex;
+    width: 100%;
+}
+
+.accountName {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.userName {
+    margin-right: auto;
+}
+
+.accountInfoButtons {
+    display: flex;
+}
+
+.searchBar {
+    width: 100%;
+    display: flex;
+}
+
+.searchBar form {
+    margin-right: auto;
+}
+
+.notifications {
+    display: flex;
+}
