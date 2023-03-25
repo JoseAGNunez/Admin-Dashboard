@@ -10,7 +10,8 @@ html, body {
 .dashboardContainer {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 1rem;
     height: 100%;
 }
 
@@ -28,6 +29,7 @@ html, body {
 .mainContent {
     grid-column: 2/3;
     grid-row: 2/4;
+    height: 100%;
 }
 
 .sidebar {
@@ -75,4 +77,14 @@ html, body {
 
 .notifications {
     display: flex;
+}
+
+.mainContentBody {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.cardPlaceholder {
+    background-color: aqua;
 }
