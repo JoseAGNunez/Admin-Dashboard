@@ -82,9 +82,62 @@ html, body {
 .mainContentBody {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-row: auto;
     gap: 1rem;
 }
 
 .cardPlaceholder {
     background-color: aqua;
+}
+
+.projects {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+
+.sidebarContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+}
+
+.announcements {
+    background-color: #f0b429;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.trending {
+    background-color: #f0b429;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.announcementsContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.announcements > h1 {
+    margin: 1rem 1rem 2rem 1rem;
+}
+
+.trendingContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.trending > h1 {
+    margin: 1rem 1rem 2rem 1rem;
 }
